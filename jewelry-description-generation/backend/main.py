@@ -27,7 +27,7 @@ app.add_middleware(
 def analyze_image_with_gemini(image_bytes):
     try:
         # TRY 1: Use the "latest" alias for Flash (often fixes the 404)
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         
         image = Image.open(io.BytesIO(image_bytes))
@@ -40,7 +40,7 @@ def analyze_image_with_gemini(image_bytes):
             "description": "A one-line description mentioning the metal type (gold, silver, etc.), gemstone color, shape, and overall style."
         }
         Do not use markdown formatting like ```json. Just return the raw JSON string.
-        For any non-jewellery or irrelevant image either choose necklace or earring and write the description based on the colors present and shape and make it seem like you are describing  whatever type you gave. 
+        For any non-jewellery or irrelevant image either choose necklace or earring and write the description based on the colors present and shape and make it seem like you are describing  whatever type you gave. Give a concise and factual description, it shouldn't be exact and 100% precise, not flowery ai generated language, it should seem like it is an output of a VGG16 encoder and GRU decoder.
         """
 
         response = model.generate_content([prompt, image])
