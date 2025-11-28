@@ -9,7 +9,6 @@ class VGG16_GRU_Classifier(nn.Module):
         vgg16 = models.vgg16(weights=models.VGG16_Weights.DEFAULT)
         self.features = vgg16.features
 
-        # Freeze feature extractor
         for param in self.features.parameters():
             param.requires_grad = False
 
@@ -42,3 +41,4 @@ def predict_image(model, image, device, transform):
         _, predicted = torch.max(output, 1)
 
     return predicted.item()
+
