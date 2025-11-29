@@ -8,7 +8,7 @@ This project implements a dual-purpose computer vision system designed to analyz
 1.  **Classification:** Accurately identifying whether an image contains a *Necklace* or *Earrings*.
 2.  **Image Captioning:** Generating natural language descriptions (captions) for the jewelry items.
 
-The model achieves high accuracy (~95% on validation) by combining Convolutional Neural Networks (CNNs) for feature extraction with Gated Recurrent Units (GRUs) for sequence processing.
+The model achieves high accuracy by combining Convolutional Neural Networks (CNNs) for feature extraction with Gated Recurrent Units (GRUs) for sequence processing.
 
 ## 📂 Dataset
 The dataset was constructed by aggregating and augmenting data from open-source repositories on Hugging Face.
