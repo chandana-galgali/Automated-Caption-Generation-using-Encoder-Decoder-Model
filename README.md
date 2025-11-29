@@ -1,8 +1,7 @@
 # 💎 Automated-Caption-Generation-using-Encoder-Decoder-Model
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)
-![Status](https://img.shields.io/badge/Status-Ongoing-blue)
+![Status](https://img.shields.io/badge/Status-Completed-green)
 
 ## 📖 Overview
 This project implements a dual-purpose computer vision system designed to analyze jewelry images. It utilizes **Transfer Learning** with a pre-trained VGG-16 architecture to perform two distinct tasks:
